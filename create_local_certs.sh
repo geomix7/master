@@ -3,7 +3,6 @@
 read -p "Provide domain: " -r DOMAIN
 CA_CERT_NAME="localCA"
 
-
 openssl genrsa -des3 -passout pass:12345 -out ${CA_CERT_NAME}.pass.key 2048
 openssl rsa -in ${CA_CERT_NAME}.pass.key -passin pass:12345 -out ${CA_CERT_NAME}.key
 openssl req -x509 -new -nodes -key ${CA_CERT_NAME}.key -sha256 -days 1825 -subj "/C=/ST=/L=/O=/CN=${CA_CERT_NAME}" -out ${CA_CERT_NAME}.pem
