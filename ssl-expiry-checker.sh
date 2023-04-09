@@ -2,8 +2,8 @@
 
 # Space separated list of domains to check
 DOMAINLIST="example.com
+example2.com
 "
-
 # Additional alert warning prepended if domain has less than this number of days before expiry
 EXPIRYALERTDAYS=30
 # Logfile/report location
