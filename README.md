@@ -1,5 +1,5 @@
 ######### Toolbox by Geomix ##########
-####################################
+######################################
 1. domain_latency.sh
    example: domain_latency.sh {DOMAIN}
    note: check latency of a domain
